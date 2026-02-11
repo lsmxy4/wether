@@ -9,8 +9,6 @@ const WeatherCard = ({ weather }) => {
 
     const { description, icon } = (weatherInfo && weatherInfo[0]) || {}
 
-    console.log(name, temp, humidity, description, icon)
-
     const iconUrl = useMemo(() => (
         icon ? `https://openweathermap.org/img/wn/${icon}@2x.png` : ''
     ), [icon])

@@ -31,9 +31,7 @@ function App() {
       setErr('')
       const { lat, lon, name, country } = await fetchCoordinates(q)
 
-      console.log(lat, lon, name, country)
       const data = await fetchWeatherByCoords(lat, lon,)
-      console.log(data)
       setWeather(data)
       setCity('')
 
